@@ -1,13 +1,13 @@
-import createRouter from "../../../spa-router-practice/router";
 
-const container = document.querySelector("main")
-const pages = {
-    home: () => container.innerText = "과일 페이지가 나와야할텐데..",
-    fruit: () => container.innerText = "🍎🍌🍊"
+
+function MainPage() {
+    return (
+        <>
+             <div>
+                💡react-router-dom 없이 라우팅 구현하기 
+            </div>
+        </>
+    )
 }
 
-const router = createRouter();
-
-router.addRoute("#/", pages.home)
-      .addRoute("#/fruit", pages.fruit)
-      .start();
+export default MainPage;
